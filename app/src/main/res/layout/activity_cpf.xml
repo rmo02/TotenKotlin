@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    tools:context=".CPF">
+
+    <View
+        android:id="@+id/header1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/blue1"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/header2"
+        style="@style/HeaderCPF"
+        app:layout_constraintTop_toBottomOf="@id/header1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textData"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="20/12/2023"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/header1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="88dp" />
+
+    <TextView
+        android:id="@+id/inputData"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:text="Data"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/textData"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="88dp" />
+
+    <TextView
+        android:id="@+id/textHora"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="03:47:53"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/header1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="386dp" />
+
+    <TextView
+        android:id="@+id/inputHora"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Hora"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/textData"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="386dp" />
+
+    <TextView
+        android:id="@+id/textPermanencia"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="05:30"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/header1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="696dp" />
+
+    <TextView
+        android:id="@+id/inputPermanecia"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Permanência"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/textData"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="696dp" />
+
+    <TextView
+        android:id="@+id/textPlaca"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:text="AAA-0000"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/header1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1000dp" />
+
+    <TextView
+        android:id="@+id/inputPlaca"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Placa"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/textData"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="1000dp" />
+
+    <View
+        android:id="@+id/containerModal"
+        style="@style/ContainerWhite"
+        android:layout_marginTop="80dp"
+        android:layout_marginHorizontal="80dp"
+        app:layout_constraintTop_toBottomOf="@+id/header2"
+        tools:layout_editor_absoluteX="40dp"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textCPF"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/containerModal"
+        android:text="@string/titleCPF"
+        android:textColor="@color/blue1"
+        android:textSize="52sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNao"
+        style="@style/Button"
+        android:layout_width="500dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="140dp"
+        android:text="Não"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/textCPF"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="105dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSim"
+        style="@style/ButtonConfirm"
+        android:layout_width="500dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="144dp"
+        android:text="Sim"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/textCPF"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="660dp" />
+    
+    <View
+        android:id="@+id/bannerHora"
+        style="@style/modalHora"
+        app:layout_constraintTop_toBottomOf="@id/containerModal"
+        android:layout_marginTop="80dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextClock
+        android:id="@+id/text_hora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1004dp"
+        android:format12Hour="hh:mm:ss"
+        android:format24Hour="hh:mm:ss"
+        android:gravity="center"
+        android:text="00:00:00"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints,UnknownId"
+        tools:layout_editor_absoluteY="717dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

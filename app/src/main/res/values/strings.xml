@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">totem</string>
     <string name="home">Toque para pagar seu Ticket</string>
+    <string name="titleCPF">Deseja o CPF/CNPJ na nota?</string>
 </resources>
