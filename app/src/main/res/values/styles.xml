@@ -9,7 +9,7 @@
 
     <style name="HeaderCPF">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">130dp</item>
+        <item name="android:layout_height">120dp</item>
         <item name="android:background">@drawable/backgroud_white2</item>
     </style>
 

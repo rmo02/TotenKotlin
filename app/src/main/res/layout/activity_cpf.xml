@@ -12,179 +12,186 @@
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:background="@color/blue1"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/header2"
+       android:id="@+id/header2"
         style="@style/HeaderCPF"
-        app:layout_constraintTop_toBottomOf="@id/header1"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toStartOf="@+id/header1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header1" />
 
     <TextView
         android:id="@+id/textData"
         android:layout_width="160dp"
         android:layout_height="30dp"
-        android:layout_marginTop="36dp"
         android:gravity="center"
-        android:text="20/12/2023"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="80dp"
+        android:text="20/02/2023"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/header1"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="88dp" />
+        app:layout_constraintStart_toStartOf="@+id/header2"
+        app:layout_constraintTop_toTopOf="@id/header2" />
 
     <TextView
         android:id="@+id/inputData"
         android:layout_width="160dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="0dp"
+        android:layout_height="30dp"
         android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
         android:text="Data"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/textData"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="88dp" />
+        app:layout_constraintStart_toStartOf="@+id/header2"
+        app:layout_constraintTop_toBottomOf="@id/textData" />
 
     <TextView
         android:id="@+id/textHora"
         android:layout_width="160dp"
         android:layout_height="30dp"
-        android:layout_marginTop="40dp"
         android:gravity="center"
-        android:text="03:47:53"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="350dp"
+        android:text="03:20"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/header1"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="386dp" />
+        app:layout_constraintStart_toStartOf="@+id/header2"
+        app:layout_constraintTop_toTopOf="@id/header2" />
 
     <TextView
         android:id="@+id/inputHora"
         android:layout_width="160dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="4dp"
+        android:layout_height="30dp"
         android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="350dp"
         android:text="Hora"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/textData"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="386dp" />
+        app:layout_constraintStart_toStartOf="@+id/header2"
+        app:layout_constraintTop_toBottomOf="@id/textData" />
 
     <TextView
         android:id="@+id/textPermanencia"
         android:layout_width="160dp"
         android:layout_height="30dp"
-        android:layout_marginTop="40dp"
         android:gravity="center"
-        android:text="05:30"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="700dp"
+        android:text="02:20"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/header1"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="696dp" />
+        app:layout_constraintStart_toStartOf="@+id/header2"
+        app:layout_constraintTop_toTopOf="@id/header2" />
 
     <TextView
         android:id="@+id/inputPermanecia"
         android:layout_width="160dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="4dp"
+        android:layout_height="30dp"
         android:gravity="center"
-        android:text="Permanência"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="700dp"
+        android:text="Permanêcia"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/textData"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="696dp" />
+        app:layout_constraintStart_toStartOf="@+id/header2"
+        app:layout_constraintTop_toBottomOf="@id/textData" />
 
     <TextView
         android:id="@+id/textPlaca"
         android:layout_width="160dp"
         android:layout_height="30dp"
-        android:layout_marginTop="44dp"
         android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="1000dp"
         android:text="AAA-0000"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/header1"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="1000dp" />
+        app:layout_constraintStart_toStartOf="@+id/header2"
+        app:layout_constraintTop_toTopOf="@id/header2" />
 
     <TextView
         android:id="@+id/inputPlaca"
         android:layout_width="160dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="30dp"
         android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="1000dp"
         android:text="Placa"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/textData"
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="1000dp" />
+        app:layout_constraintStart_toStartOf="@+id/header2"
+        app:layout_constraintTop_toBottomOf="@id/textData" />
 
     <View
         android:id="@+id/containerModal"
         style="@style/ContainerWhite"
-        android:layout_marginTop="80dp"
         android:layout_marginHorizontal="80dp"
-        app:layout_constraintTop_toBottomOf="@+id/header2"
-        tools:layout_editor_absoluteX="40dp"
-        tools:ignore="DuplicateIds,MissingConstraints" />
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header2" />
 
     <TextView
         android:id="@+id/textCPF"
-        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/containerModal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
         android:text="@string/titleCPF"
         android:textColor="@color/blue1"
         android:textSize="52sp"
         android:textStyle="bold"
-        android:gravity="center"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/containerModal" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnNao"
-        style="@style/Button"
-        android:layout_width="500dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="140dp"
-        android:text="Não"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/textCPF"
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="105dp" />
+         android:id="@+id/btnNao"
+         style="@style/Button"
+         android:layout_width="500dp"
+         android:layout_height="100dp"
+         android:layout_marginTop="230dp"
+         android:layout_marginRight="600dp"
+         android:text="Não"
+         android:textSize="32sp"
+         android:textStyle="bold"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toTopOf="@id/containerModal" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSim"
         style="@style/ButtonConfirm"
         android:layout_width="500dp"
         android:layout_height="100dp"
-        android:layout_marginTop="144dp"
-        android:text="Sim"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="600dp"
+        android:text="Não"
         android:textSize="32sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/textCPF"
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="660dp" />
-    
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/containerModal" />
+
     <View
         android:id="@+id/bannerHora"
         style="@style/modalHora"
-        app:layout_constraintTop_toBottomOf="@id/containerModal"
-        android:layout_marginTop="80dp"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerModal" />
 
     <TextClock
         android:id="@+id/text_hora"
@@ -193,13 +200,15 @@
         android:layout_marginEnd="1004dp"
         android:format12Hour="hh:mm:ss"
         android:format24Hour="hh:mm:ss"
+        android:layout_marginTop="30dp"
         android:gravity="center"
         android:text="00:00:00"
         android:textColor="@color/white"
         android:textSize="50sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints,UnknownId"
-        tools:layout_editor_absoluteY="717dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bannerHora" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
