@@ -13,26 +13,25 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="-15dp" />
 
     <TextClock
         android:id="@+id/text_hora"
-        android:layout_width="246dp"
-        android:layout_height="68dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginEnd="596dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:format12Hour="hh:mm"
         android:format24Hour="hh:mm"
-        android:paddingLeft="85dp"
-        android:paddingTop="10dp"
         android:text="00:00"
         android:textColor="@color/white"
         android:textSize="50sp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints,UnknownId"
-        tools:layout_editor_absoluteY="4dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <View
         android:id="@+id/containerWhite"
@@ -43,12 +42,14 @@
 
     <TextView
         android:id="@+id/textTicket"
-        style="@style/Edit_Text"
-        android:text="Aproxime o ticket na leitora"
+        android:layout_height="80dp"
+        android:layout_width="match_parent"
+        android:text="@string/titleScan"
         android:textColor="@color/blue1"
         android:textStyle="bold"
         android:textSize="30sp"
         android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="@id/containerWhite"
         app:layout_constraintTop_toTopOf="@id/containerWhite"
         />
@@ -78,8 +79,8 @@
         style="@style/ContainerComponents"
         android:layout_width="match_parent"
         android:layout_height="110dp"
-        tools:ignore="MissingConstraints"
         android:layout_marginTop="80dp"
+        tools:ignore="MissingConstraints"
         app:layout_constraintStart_toStartOf="@+id/containerWhite"
         app:layout_constraintTop_toBottomOf="@+id/containerWhite"
         />

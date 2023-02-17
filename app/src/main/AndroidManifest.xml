@@ -17,13 +17,13 @@
             android:name=".home"
             android:exported="false" />
         <activity
-            android:name=".scan"
+            android:name=".CPF"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".CPF"
+            android:name=".scan"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
