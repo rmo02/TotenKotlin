@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fundo"
-    tools:context=".CPF">
+    tools:context=".InputCPF">
 
     <View
         android:id="@+id/header1"
@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-       android:id="@+id/header2"
+        android:id="@+id/header2"
         style="@style/HeaderCPF"
         app:layout_constraintStart_toStartOf="@+id/header1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -154,45 +154,46 @@
         android:textColor="@color/blue1"
         android:textSize="52sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/containerModal"
+        app:layout_constraintEnd_toEndOf="@+id/containerModal"
         app:layout_constraintTop_toTopOf="@id/containerModal" />
 
-
-
-    <androidx.appcompat.widget.AppCompatButton
-         android:id="@+id/btnNao"
-         style="@style/Button"
-         android:layout_width="500dp"
-         android:layout_height="100dp"
-         android:layout_marginTop="230dp"
-         android:layout_marginRight="600dp"
-         android:text="Não"
-         android:textSize="32sp"
-         android:textStyle="bold"
-         app:layout_constraintStart_toStartOf="parent"
-         app:layout_constraintEnd_toEndOf="parent"
-         app:layout_constraintTop_toTopOf="@id/containerModal"
-
-        />
+    <EditText
+        style="@style/Edit_Text"
+        android:hint="@string/hint_cpf"
+        app:layout_constraintStart_toStartOf="@+id/containerModal"
+        app:layout_constraintEnd_toEndOf="@+id/containerModal"
+        app:layout_constraintTop_toTopOf="@+id/textCPF" />
 
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnSim"
-        style="@style/ButtonConfirm"
+        android:id="@+id/btnNao"
+        style="@style/Button"
         android:layout_width="500dp"
         android:layout_height="100dp"
-        android:layout_marginTop="230dp"
-        android:layout_marginLeft="600dp"
-        android:text="Sim"
+        android:layout_marginTop="250dp"
+        android:layout_marginRight="600dp"
+        android:text="Cancelar"
         android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/containerModal" />
 
-
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSim"
+        style="@style/ButtonConfirm"
+        android:layout_width="500dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="600dp"
+        android:text="Confirmar"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/containerModal" />
 
     <View
         android:id="@+id/bannerHora"
@@ -215,8 +216,5 @@
         android:textSize="50sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/bannerHora" />
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,4 +3,5 @@
     <string name="home">Toque para pagar seu Ticket</string>
     <string name="titleCPF">Deseja o CPF/CNPJ na nota?</string>
     <string name="titleScan">Aproxime o ticket na leitora</string>
+    <string name="hint_cpf"><font size="26">XXX.XXX.XXX-XX</font></string>
 </resources>
